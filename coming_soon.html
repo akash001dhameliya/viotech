@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FaviCon Icons -->
+    <link rel="shortcut icon" href="Image/favicon.png" type="image/x-icon">
+
+    <title>Techvio - IT Solutions & Business Services Website Template</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Dosis:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Dosis:wght@300&display=swap');
+    </style> -->
+
+ 
+    <!-- Owl Carousel Slider -->
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" href="CSS/animate.min.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    
+    <!-- Font Awarsome For Fonts -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    
+    <!-- Style File -->
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body>
+
+    <!-- Start Preloader Area -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="shadow"></div>
+			<div class="box"></div>
+		</div>
+	</div>
+	<!-- End Preloader Area -->
+
+    <!-- Start Go Top Section -->
+	<div class="go-top">
+		<i class="fas fa-chevron-up"></i>
+		<i class="fas fa-chevron-up"></i>
+	</div>
+	<!-- End Go Top Section -->
+
+    <!-- Coming Soon - Start -->
+    <div class="comingsoon">
+        <div class="container">
+          <div class="coming">
+            <div class="soon">
+                <div class="headercomingsoon">
+                    <div class="headercoming">
+                        Our Website is Coming Soon
+                    </div>
+                    <div class="containcoming">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dignissimos nam voluptatum, eligendi impedit repellat! Harum sint esse ipsa inventore ratione, accusantium natus incidunt nobis.
+                    </div>
+                    <form action="" class="formcoming">
+                        <input type="text" placeholder="Enter your email" required>
+                        <input type="submit" value="SUBMIT">
+                    </form>
+                    <div class="roundcoming flex">
+                        <div class="firstround">
+                            <span>-101</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="firstround">
+                            <span>9</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="firstround">
+                            <span>48</span>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="firstround">
+                            <span>58</span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialmediaicon">
+                    <div class="headersocial">
+                        Follow us for update :
+                    </div>
+                    <div class="iconfooter flex">
+                        <div class="face iconapp">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="twiter iconapp">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="pi iconapp">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="linkdend iconapp">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+    <!-- Coming Soon - End -->
+
+    <!-- J-Query File -->
+    <script src="JS/jquery-3.6.1.min.js"></script>
+
+    <!-- For The Slider -->
+    <script src="JS/owl.carousel.min.js"></script>
+    
+    <!-- Script File -->
+    <script src="JS/script.js"></script>
+
+    <!-- Go To Top Script -->
+    <script>
+         // Go to Top
+         $(function(){
+            // Scroll Event
+            $(window).on('scroll', function(){
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 600) $('.go-top').addClass('active');
+                if (scrolled < 600) $('.go-top').removeClass('active');
+            });  
+            // Click Event
+            $('.go-top').on('click', function() {
+                $("html, body").animate({ scrollTop: "0" },  500);
+            });
+        });
+        
+        // Sticky Navbar
+        $(function(){
+            // Scroll Event
+            $(window).on('scroll', function(){
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 100) $('.sticky').addClass('active');
+                if (scrolled < 100) $('.sticky').removeClass('active');
+            });  
+        });
+
+        // Simple Header
+        $(function(){
+            // Scroll Event
+            $(window).on('scroll', function(){
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 100) $('.headertag').addClass('active');
+                if (scrolled < 100) $('.headertag').removeClass('active');
+            });  
+        });
+
+    </script>
+
+</body>
+</html>
